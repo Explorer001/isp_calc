@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="calc">
+            <and mandatory="true" name="Parser">
+                <feature mandatory="true" name="Basic"/>
+                <or abstract="true" mandatory="true" name="Bereiche">
+                    <feature name="N"/>
+                    <feature name="R"/>
+                    <feature name="C"/>
+                </or>
+                <feature name="root"/>
+                <feature name="power"/>
+                <feature mandatory="true" name="Runden"/>
+                <feature mandatory="true" name="Logic"/>
+                <feature name="Logging"/>
+                <feature name="Matrix"/>
+            </and>
+        </and>
+    </struct>
+    <constraints>
+        <rule>
+            <imp>
+                <var>C</var>
+                <var>root</var>
+            </imp>
+        </rule>
+    </constraints>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>

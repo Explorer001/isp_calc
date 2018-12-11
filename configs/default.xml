@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="calc"/>
+    <feature automatic="selected" manual="selected" name="Parser"/>
+    <feature automatic="selected" name="Basic"/>
+    <feature automatic="selected" name="Bereiche"/>
+    <feature manual="selected" name="N"/>
+    <feature manual="selected" name="R"/>
+    <feature automatic="selected" name="Runden"/>
+    <feature automatic="selected" name="Logic"/>
+</configuration>
