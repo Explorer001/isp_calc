@@ -1,0 +1,26 @@
+
+
+SoUrCe RooT C "../features/C/Complex.jak";/**
+ * TODO description
+ */
+public class Complex {
+	double real;
+	double imag;
+	
+	public Complex(double r, double i) {
+		this.real = r;
+		this.imag = i;
+	}
+	
+	public String toString() {
+		if (this.imag >= 0) {
+			return Double.toString(this.real) + " + " + Double.toString(this.imag) + "i";
+		}
+		return Double.toString(this.real) + " - " + Double.toString(this.imag) + "i";
+	}
+	
+	public double abs() {
+		Root root = new Root();
+		return root.sqrt(root.pow(this.real, 2) + root.pow(this.imag, 2));
+	}
+}
