@@ -4,8 +4,8 @@
     <feature automatic="selected" manual="selected" name="Parser"/>
     <feature automatic="selected" name="Basic"/>
     <feature automatic="selected" name="Bereiche"/>
-    <feature manual="selected" name="N"/>
     <feature manual="selected" name="R"/>
+    <feature manual="selected" name="root"/>
     <feature automatic="selected" name="Runden"/>
     <feature automatic="selected" name="Logic"/>
 </configuration>

@@ -26,33 +26,7 @@ abstract class Base$$Basic {
 /**
  * TODO description
  */
-abstract class Base$$N extends  Base$$Basic  {
-
-
-		public int add(int i, int j) {
-			return i+j;
-		}
-		
-		public int sub(int i, int j) {
-			return i-j;
-		}
-		
-		public int mul(int i, int j) {
-			return i*j;
-		}
-		
-		public int div(int i, int j) {
-			return i/j;
-		}
-		
-
-	
-}
-
-/**
- * TODO description
- */
-public class Base extends  Base$$N  {
+public class Base extends  Base$$Basic  {
 
 
 		public float add(float i, float j) {

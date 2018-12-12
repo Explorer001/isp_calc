@@ -11,11 +11,14 @@
                     <feature name="C"/>
                 </or>
                 <feature name="root"/>
-                <feature name="power"/>
                 <feature mandatory="true" name="Runden"/>
                 <feature mandatory="true" name="Logic"/>
                 <feature name="Logging"/>
-                <feature name="Matrix"/>
+                <and name="Matrix">
+                    <feature name="Det"/>
+                    <feature name="Mult"/>
+                    <feature name="Add"/>
+                </and>
             </and>
         </and>
     </struct>

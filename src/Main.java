@@ -20,6 +20,7 @@ public class Main {
 		*/
 		System.out.println(new Base().add((float) 1.0, (float) 1.0));
 		System.out.println(new Base().add(1, 1));
+		System.out.println(new Root().root(4,2));
 	}
 	
 }

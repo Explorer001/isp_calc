@@ -1,0 +1,42 @@
+/**
+ * TODO description
+ */
+public class Logic {
+	
+	public static int max(int a, int b)
+	{
+		return (a > b)? a : b;
+	}
+	
+	public int and(int a, int b) {
+		return a*b;
+	}
+	
+	public int or(int a, int b) {
+		return max(a, b);
+	}
+	
+	public int not(int a) {
+		return 1-a;
+	}
+	
+	public int xor(int a, int b) {
+		return this.and(this.or(a, b), this.not(this.and(a, b)));
+	}
+	
+	public int nor(int a, int b) {
+		return this.not(this.or(a, b));
+	}
+	
+	public int nand(int a, int b) {
+		return this.not(this.and(a, b));
+	}
+	
+	public int directional(int a, int b) {
+		return this.nor(this.not(a), b);
+	}
+	
+	public int bidirectional(int a, int b) {
+		return this.and(this.directional(a, b), this.directional(b, a));
+	}
+}
