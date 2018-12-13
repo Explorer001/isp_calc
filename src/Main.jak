@@ -31,7 +31,7 @@ public class Main {
 		b.set(0,1,1);
 		b.set(1,0,1);
 		b.set(1,1,1);
-		Matrix c = new MatAdd().add(a, b);
+		Matrix c = new MatMult().mult(a, b);
 		c.print();
 	}
 	

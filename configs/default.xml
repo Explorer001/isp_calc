@@ -4,6 +4,7 @@
     <feature automatic="selected" manual="selected" name="Parser"/>
     <feature automatic="selected" name="Basic"/>
     <feature automatic="selected" manual="selected" name="Matrix"/>
+    <feature manual="selected" name="Mult"/>
     <feature manual="selected" name="Add"/>
     <feature automatic="unselected" manual="unselected" name="C"/>
     <feature automatic="selected" manual="selected" name="root"/>
