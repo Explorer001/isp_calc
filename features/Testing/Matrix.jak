@@ -1,0 +1,16 @@
+/**
+ * TODO description
+ */
+public refines class Matrix {
+	
+	public void set(int i, int j, double val) {
+		Super().set(i,j,val);
+		System.out.println("Set value at (" + Integer.toString(i) + ", " + Integer.toString(j) + ") to " + Double.toString(val));
+	}
+	
+	public double get(int i, int j) {
+		System.out.println("Get value at (" + Integer.toString(i) + ", " + Integer.toString(j) + ")");
+		return Super().get(i, j);
+	}
+	
+}
