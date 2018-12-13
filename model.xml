@@ -5,20 +5,17 @@
         <and abstract="true" mandatory="true" name="calc">
             <and mandatory="true" name="Parser">
                 <feature mandatory="true" name="Basic"/>
-                <or abstract="true" mandatory="true" name="Bereiche">
-                    <feature name="N"/>
-                    <feature name="R"/>
-                    <feature name="C"/>
-                </or>
-                <feature name="root"/>
-                <feature mandatory="true" name="Runden"/>
-                <feature mandatory="true" name="Logic"/>
-                <feature name="Logging"/>
                 <and name="Matrix">
                     <feature name="Det"/>
                     <feature name="Mult"/>
                     <feature name="Add"/>
                 </and>
+                <feature mandatory="true" name="R"/>
+                <feature name="C"/>
+                <feature name="root"/>
+                <feature mandatory="true" name="Runden"/>
+                <feature mandatory="true" name="Logic"/>
+                <feature name="Logging"/>
             </and>
         </and>
     </struct>
