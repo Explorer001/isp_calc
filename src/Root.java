@@ -1,20 +1,20 @@
 
+import java.lang.Math;
+
 
 /**
  * TODO description
  */
-public  class Root {
-
-	public int sqrt(int val) {
-		return (int) Math.sqrt(val);
+public class Root {
+	public double sqrt(double val) {
+		return Math.sqrt(val);
 	}
 	
-	public int root(int val, int base) {
-		return (int) Math.pow(Math.E, Math.log(val)/base);
+	public double root(double val, double base) {
+		return Math.pow(Math.E, Math.log(val)/base);
 	}
 	
-	public int pow(int a, int b) {
-		return (int) Math.pow(a, b);
+	public double pow(double a, double b) {
+		return Math.pow(a, b);
 	}
-	
 }

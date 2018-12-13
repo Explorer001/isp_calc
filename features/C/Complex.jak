@@ -5,6 +5,11 @@ public class Complex {
 	double real;
 	double imag;
 	
+	public Complex() {
+		this.real = 0;
+		this.imag = 1;
+	}
+	
 	public Complex(double r, double i) {
 		this.real = r;
 		this.imag = i;

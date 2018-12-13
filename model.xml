@@ -10,23 +10,22 @@
                     <feature name="Mult"/>
                     <feature name="Add"/>
                 </and>
-                <feature mandatory="true" name="R"/>
                 <feature name="C"/>
-                <feature name="root"/>
+                <feature mandatory="true" name="root"/>
                 <feature mandatory="true" name="Runden"/>
                 <feature mandatory="true" name="Logic"/>
                 <feature name="Logging"/>
+                <feature name="Testing"/>
             </and>
         </and>
     </struct>
     <constraints>
         <rule>
             <imp>
-                <var>C</var>
-                <conj>
-                    <var>root</var>
-                    <var>R</var>
-                </conj>
+                <var>Matrix</var>
+                <not>
+                    <var>C</var>
+                </not>
             </imp>
         </rule>
     </constraints>

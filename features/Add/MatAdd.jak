@@ -1,0 +1,19 @@
+/**
+ * TODO description
+ */
+public class MatAdd {
+
+	public Matrix add(Matrix a, Matrix b) {
+		if (a.m != b.m || a.n != b.n) {
+			return null;
+		}
+		Matrix new_mat = new Matrix(a.m, a.n);
+		for (int i = 0; i < a.m; i++) {
+			for (int j = 0; j < a.n; j++) {
+				new_mat.set(i, j, a.get(i, j) + b.get(i, j));
+			}
+		}
+		return new_mat;
+	}
+	
+}

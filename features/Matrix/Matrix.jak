@@ -1,0 +1,34 @@
+/**
+ * TODO description
+ */
+public class Matrix {
+	
+	int m;
+	int n;
+	double matrix[][];
+	
+	public Matrix(int i, int j) {
+		this.m = i;
+		this.n = j;
+		this.matrix = new double[i][j];
+	}
+	
+	public void set(int i, int j, double val) {
+		this.matrix[i][j] = val;
+	}
+	
+	public double get(int i, int j) {
+		return this.matrix[i][j];
+	}
+	
+	public void print() {
+		for (int i = 0; i < this.m; i++) {
+			System.out.print("[" + this.matrix[i][0]);
+			for (int j = 1; j < this.n; j++) {
+				System.out.print(", " + this.matrix[i][j]);
+			}
+			System.out.println("]");
+		}
+	}
+	
+}

@@ -3,72 +3,22 @@
 /**
  * TODO description
  */
-abstract class Base$$Basic {
+public class Base {
 
-	public int add(int i, int j) {
-		return 0;
+	public double add(double i, double j) {
+		return i+j;
 	}
 	
-	public int sub(int i, int j) {
-		return 0;
+	public double sub(double i, double j) {
+		return i-j;
 	}
 	
-	public int mul(int i, int j) {
-		return 0;
+	public double mul(double i, double j) {
+		return i*j;
 	}
 	
-	public int div(int i, int j) {
-		return 0;
+	public double div(double i, double j) {
+		return i/j;
 	}
-	
-}
-
-/**
- * TODO description
- */
-abstract class Base$$N extends  Base$$Basic  {
-
-
-		public int add(int i, int j) {
-			return i+j;
-		}
-		
-		public int sub(int i, int j) {
-			return i-j;
-		}
-		
-		public int mul(int i, int j) {
-			return i*j;
-		}
-		
-		public int div(int i, int j) {
-			return i/j;
-		}
-			
-}
-
-/**
- * TODO description
- */
-public class Base extends  Base$$N  {
-
-
-		public float add(float i, float j) {
-			return i+j;
-		}
-		
-		public float sub(float i, float j) {
-			return i-j;
-		}
-		
-		public float mul(float i, float j) {
-			return i*j;
-		}
-		
-		public float div(float i, float j) {
-			return i/j;
-		}
-		
-	
 	
 }
