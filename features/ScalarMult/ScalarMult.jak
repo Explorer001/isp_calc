@@ -1,0 +1,16 @@
+/**
+ * TODO description
+ */
+public class ScalarMult {
+
+	public Matrix mult(double s, Matrix m) {
+		Matrix new_mat = new Matrix(m.m, m.n);
+		for (int i = 0; i < new_mat.m; i++) {
+			for (int j = 0; j < new_mat.n; j++) {
+				new_mat.set(i,j,m.get(i,j)*s);
+			}
+		}
+		return new_mat;
+	}
+	
+}

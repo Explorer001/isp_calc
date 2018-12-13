@@ -6,7 +6,7 @@
             <and mandatory="true" name="Parser">
                 <feature mandatory="true" name="Basic"/>
                 <and name="Matrix">
-                    <feature name="Det"/>
+                    <feature name="ScalarMult"/>
                     <feature name="Mult"/>
                     <feature name="Add"/>
                 </and>

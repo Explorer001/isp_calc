@@ -33,6 +33,8 @@ public class Main {
 		b.set(1,1,1);
 		Matrix c = new MatMult().mult(a, b);
 		c.print();
+		Matrix d = new ScalarMult().mult(2, c);
+		d.print();
 	}
 	
 }
