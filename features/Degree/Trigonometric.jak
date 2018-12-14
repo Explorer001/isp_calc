@@ -1,0 +1,44 @@
+
+import java.lang.Math;
+/**
+ * TODO description
+ */
+public refines class Trigonometric {
+
+	public double sin(double val) {
+		double rads = Math.toRadians(val);
+		double angle = Super().sin(rads);
+		return Math.toDegrees(angle);
+	}
+	
+	public double cos(double val) {
+		double rads = Math.toRadians(val);
+		double angle = Super().cos(rads);
+		return Math.toDegrees(angle);
+	}
+	
+	public double tan(double val) {
+		double rads = Math.toRadians(val);
+		double angle = Super().tan(rads);
+		return Math.toDegrees(angle);
+	}
+	
+	public double asin(double val) {
+		double rads = Math.toRadians(val);
+		double angle = Super().asin(rads);
+		return Math.toDegrees(angle);
+	}
+	
+	public double acos(double val) {
+		double rads = Math.toRadians(val);
+		double angle = Super().acos(rads);
+		return Math.toDegrees(angle);
+	}
+	
+	public double atan(double val) {
+		double rads = Math.toRadians(val);
+		double angle = Super().atan(rads);
+		return Math.toDegrees(angle);
+	}
+	
+}

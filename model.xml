@@ -5,27 +5,28 @@
         <and abstract="true" mandatory="true" name="calc">
             <and mandatory="true" name="Parser">
                 <feature mandatory="true" name="Basic"/>
-                <and name="Matrix">
+                <and mandatory="true" name="Matrix">
                     <feature name="ScalarMult"/>
                     <feature name="Mult"/>
                     <feature name="Add"/>
                 </and>
                 <feature name="C"/>
-                <feature mandatory="true" name="root"/>
+                <feature name="root"/>
                 <feature mandatory="true" name="Runden"/>
                 <feature mandatory="true" name="Logic"/>
                 <feature name="Logging"/>
                 <feature name="Testing"/>
+                <and mandatory="true" name="Trigonometric">
+                    <feature name="Degree"/>
+                </and>
             </and>
         </and>
     </struct>
     <constraints>
         <rule>
             <imp>
-                <var>Matrix</var>
-                <not>
-                    <var>C</var>
-                </not>
+                <var>C</var>
+                <var>root</var>
             </imp>
         </rule>
     </constraints>

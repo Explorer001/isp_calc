@@ -1,0 +1,32 @@
+
+import java.lang.Math;
+/**
+ * TODO description
+ */
+public class Trigonometric {
+
+	public double sin(double val) {
+		return Math.sin(val);
+	}
+	
+	public double cos(double val) {
+		return Math.cos(val);
+	}
+	
+	public double tan(double val) {
+		return Math.tan(val);
+	}
+	
+	public double asin(double val) {
+		return Math.asin(val);
+	}
+	
+	public double acos(double val) {
+		return Math.acos(val);
+	}
+	
+	public double atan(double val) {
+		return Math.atan(val);
+	}
+	
+}
