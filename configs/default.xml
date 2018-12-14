@@ -10,7 +10,7 @@
     <feature manual="selected" name="root"/>
     <feature automatic="selected" name="Runden"/>
     <feature automatic="selected" name="Logic"/>
-    <feature manual="selected" name="Logging"/>
+    <feature automatic="selected" manual="selected" name="Logging"/>
     <feature manual="selected" name="Testing"/>
     <feature automatic="selected" name="Trigonometric"/>
     <feature manual="selected" name="Degree"/>

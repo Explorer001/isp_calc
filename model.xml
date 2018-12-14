@@ -14,7 +14,7 @@
                 <feature name="root"/>
                 <feature mandatory="true" name="Runden"/>
                 <feature mandatory="true" name="Logic"/>
-                <feature name="Logging"/>
+                <feature mandatory="true" name="Logging"/>
                 <feature name="Testing"/>
                 <and mandatory="true" name="Trigonometric">
                     <feature name="Degree"/>
