@@ -7,11 +7,9 @@
     <feature manual="selected" name="ScalarMult"/>
     <feature manual="selected" name="Mult"/>
     <feature manual="selected" name="Add"/>
-    <feature manual="selected" name="root"/>
     <feature automatic="selected" name="Runden"/>
     <feature automatic="selected" name="Logic"/>
     <feature automatic="selected" manual="selected" name="Logging"/>
-    <feature manual="selected" name="Testing"/>
     <feature automatic="selected" name="Trigonometric"/>
     <feature manual="selected" name="Degree"/>
 </configuration>

@@ -16,7 +16,7 @@ public class Base {
 	}
 	
 	public double div(double i, double j) {
-		return i/j;
+		return (j == 0)? 0 : i/j;
 	}
 	
 }
