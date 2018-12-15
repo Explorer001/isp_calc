@@ -5,8 +5,9 @@
     <feature automatic="selected" name="Basic"/>
     <feature automatic="selected" manual="selected" name="Matrix"/>
     <feature manual="selected" name="ScalarMult"/>
-    <feature manual="selected" name="Mult"/>
-    <feature manual="selected" name="Add"/>
+    <feature automatic="unselected" name="Mult"/>
+    <feature automatic="unselected" name="Add"/>
+    <feature manual="selected" name="root"/>
     <feature automatic="selected" name="Runden"/>
     <feature automatic="selected" name="Logic"/>
     <feature automatic="selected" manual="selected" name="Logging"/>

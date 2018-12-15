@@ -17,6 +17,8 @@ public class Main {
 		System.out.println("3: Round");
 		System.out.println("4: Logic");
 		System.out.println("5: Trigonometric");
+		System.out.println("6: Complex");
+		System.out.println("7: Root");
 		rd = sc.nextLine();
 		System.out.println(rd);
 		if (rd.equals("q")) {
@@ -31,8 +33,20 @@ public class Main {
 			eval_logic();
 		} else if (rd.equals("5")) {
 			eval_trig();
+		} else if (rd.equals("6")) {
+			eval_c();
+		} else if (rd.equals("7")) {
+			eval_root();
 		}
 		return rv;
+	}
+	
+	public static void eval_c() {
+		
+	}
+	
+	public static void eval_root() {
+		
 	}
 	
 	public static void eval_base() {

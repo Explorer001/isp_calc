@@ -8,7 +8,7 @@ public class Root {
 		return Math.sqrt(val);
 	}
 	
-	public double root(double val, double base) {
+	public double root(double val, int base) {
 		return Math.pow(Math.E, Math.log(val)/base);
 	}
 	

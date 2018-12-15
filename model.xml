@@ -5,11 +5,11 @@
         <and abstract="true" mandatory="true" name="calc">
             <and mandatory="true" name="Parser">
                 <feature mandatory="true" name="Basic"/>
-                <and mandatory="true" name="Matrix">
+                <alt mandatory="true" name="Matrix">
                     <feature name="ScalarMult"/>
                     <feature name="Mult"/>
                     <feature name="Add"/>
-                </and>
+                </alt>
                 <feature name="C"/>
                 <feature name="root"/>
                 <feature mandatory="true" name="Runden"/>
