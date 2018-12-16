@@ -1,0 +1,31 @@
+/**
+ * TODO description
+ */
+public refines class Parser {
+
+	public static Matrix eval_mat() {
+		Matrix m1 = Super().eval_mat();
+		System.out.println("Matrix addition");
+		Super().l.log("Matrix addition");
+		int n,m;
+		System.out.print("n=");
+		n = Integer.parseInt(sc.nextLine());
+		System.out.println();
+		System.out.print("m=");
+		m = Integer.parseInt(sc.nextLine());
+		System.out.println();
+		Matrix M = new Matrix(n, m);
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				System.out.print("("+Integer.toString(i)+", "+Integer.toString(j)+")=");
+				M.set(i,j,Double.parseDouble(sc.nextLine()));
+			}
+		}
+		Matrix new_mat = new MatAdd().add(m1, M);
+		if (new_mat != null) {
+			new_mat.print();
+		}
+		return new_mat;
+	}
+	
+}

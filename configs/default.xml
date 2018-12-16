@@ -13,6 +13,5 @@
     <feature automatic="selected" name="Runden"/>
     <feature automatic="selected" name="Logic"/>
     <feature automatic="selected" manual="selected" name="Logging"/>
-    <feature manual="selected" name="Testing"/>
     <feature automatic="selected" name="Trigonometric"/>
 </configuration>

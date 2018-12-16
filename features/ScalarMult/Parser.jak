@@ -6,6 +6,7 @@ public refines class Parser {
 	public static Matrix eval_mat() {
 		Matrix m1 = Super().eval_mat();
 		System.out.println("Scalar mult");
+		Super().l.log("Scalar mult");
 		System.out.print("Scalar = ");
 		double sc = Super().sc.nextDouble();
 		System.out.println();
