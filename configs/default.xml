@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
     <feature automatic="selected" name="calc"/>
+    <feature automatic="selected" name="Main"/>
     <feature automatic="selected" manual="selected" name="Parser"/>
     <feature automatic="selected" name="Basic"/>
     <feature automatic="selected" manual="selected" name="Matrix"/>

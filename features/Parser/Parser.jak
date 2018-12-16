@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * TODO description
  */
-public class Main {
+public class Parser {
 	
 	static Logging l = new Logging("log");
 	static Scanner sc = new Scanner(System.in);
@@ -34,19 +34,19 @@ public class Main {
 		} else if (rd.equals("5")) {
 			eval_trig();
 		} else if (rd.equals("6")) {
-			eval_c();
+			new Parser().eval_c();
 		} else if (rd.equals("7")) {
-			eval_root();
+			new Parser().eval_root();
 		}
 		return rv;
 	}
 	
 	public static void eval_c() {
-		
+		System.out.println("not implemented");
 	}
 	
 	public static void eval_root() {
-		
+		System.out.println("not implemented");
 	}
 	
 	public static void eval_base() {
@@ -234,14 +234,6 @@ public class Main {
 			l.log("atan("+Double.toString(v1)+") = "+Double.toString(s));
 			break;
 		}
-	}
-	
-	public static void main(String args[]) {
-		boolean run = true;
-		while (run) {
-			run = eval();
-		}
-		sc.close();
 	}
 	
 }

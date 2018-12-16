@@ -1,0 +1,32 @@
+/**
+ * TODO description
+ */
+public refines class Parser {
+	
+	public static void eval_root() {
+		System.out.print("Val=");
+		double v = Super().sc.nextDouble();
+		System.out.println();
+		System.out.println("1: sqrt");
+		System.out.println("2: nroot");
+		System.out.println();
+		int sel = Super().sc.nextInt();
+		double s;
+		switch (sel) {
+		case 1:
+			s = new Root().sqrt(v);
+			System.out.println("Solution is "+Double.toString(s));
+			Super().l.log("sqrt("+Double.toString(v)+")="+Double.toString(s));
+			break;
+		case 2:
+			System.out.print("n=");
+			int deg = Super().sc.nextInt();
+			System.out.println();
+			s = new Root().root(v, deg);
+			System.out.println("Solution is "+Double.toString(s));
+			Super().l.log("root("+Double.toString(v)+","+Double.toString(deg)+")="+Double.toString(s));
+			break;
+		}
+	}
+	
+}

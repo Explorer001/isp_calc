@@ -3,21 +3,23 @@
     <properties/>
     <struct>
         <and abstract="true" mandatory="true" name="calc">
-            <and mandatory="true" name="Parser">
-                <feature mandatory="true" name="Basic"/>
-                <alt mandatory="true" name="Matrix">
-                    <feature name="ScalarMult"/>
-                    <feature name="Mult"/>
-                    <feature name="Add"/>
-                </alt>
-                <feature name="C"/>
-                <feature name="root"/>
-                <feature mandatory="true" name="Runden"/>
-                <feature mandatory="true" name="Logic"/>
-                <feature mandatory="true" name="Logging"/>
-                <feature name="Testing"/>
-                <and mandatory="true" name="Trigonometric">
-                    <feature name="Degree"/>
+            <and mandatory="true" name="Main">
+                <and mandatory="true" name="Parser">
+                    <feature mandatory="true" name="Basic"/>
+                    <alt mandatory="true" name="Matrix">
+                        <feature name="ScalarMult"/>
+                        <feature name="Mult"/>
+                        <feature name="Add"/>
+                    </alt>
+                    <feature name="C"/>
+                    <feature name="root"/>
+                    <feature mandatory="true" name="Runden"/>
+                    <feature mandatory="true" name="Logic"/>
+                    <feature mandatory="true" name="Logging"/>
+                    <feature name="Testing"/>
+                    <and mandatory="true" name="Trigonometric">
+                        <feature name="Degree"/>
+                    </and>
                 </and>
             </and>
         </and>

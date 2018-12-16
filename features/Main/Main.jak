@@ -1,6 +1,4 @@
-
-
-SoUrCe RooT Main "../features/Main/Main.jak";/**
+/**
  * TODO description
  */
 public class Main {
