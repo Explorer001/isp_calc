@@ -8,7 +8,8 @@
     <feature manual="selected" name="ScalarMult"/>
     <feature automatic="unselected" name="Mult"/>
     <feature automatic="unselected" name="Add"/>
-    <feature manual="selected" name="root"/>
+    <feature manual="selected" name="C"/>
+    <feature automatic="selected" manual="selected" name="root"/>
     <feature automatic="selected" name="Runden"/>
     <feature automatic="selected" name="Logic"/>
     <feature automatic="selected" manual="selected" name="Logging"/>

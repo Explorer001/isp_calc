@@ -3,4 +3,45 @@
  */
 public refines class Parser {
 
+	public static void eval_c() {
+		double v1, v2;
+		System.out.print("real1 =");
+		v1 = Super().sc.nextDouble();
+		System.out.println();
+		System.out.println("imag1 =");
+		v2 = Super().sc.nextDouble();
+		System.out.println();
+		Complex c1 = new Complex(v1, v2);
+		System.out.print("real2 =");
+		v1 = Super().sc.nextDouble();
+		System.out.println();
+		System.out.println("imag2 =");
+		v2 = Super().sc.nextDouble();
+		System.out.println();
+		Complex c2 = new Complex(v1, v2);
+		System.out.println("1: Add");
+		System.out.println("2: Mult");
+		System.out.println("3: abs (c1)");
+		int sel = Super().sc.nextInt();
+		Complex s;
+		double s1;
+		switch (sel) {
+		case 1:
+			s = new Base().add(c1, c2);
+			System.out.println("Solution is " + s.toString());
+			Super().l.log(c1.toString() + " + " + c2.toString() + " = " + s.toString());
+			break;
+		case 2:
+			s = new Base().mul(c1, c2);
+			System.out.println("Solution is " + s.toString());
+			Super().l.log(c1.toString() + " * " + c2.toString() + " = " + s.toString());
+			break;
+		case 3:
+			s1 = c1.abs();
+			System.out.println("Solution is " + Double.toString(s1));
+			Super().l.log("abs("+c1.toString()+") = " + Double.toString(s1));
+			break;
+		}		
+	}
+	
 }

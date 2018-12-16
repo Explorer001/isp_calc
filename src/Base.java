@@ -26,7 +26,24 @@ abstract class Base$$Basic {
 /**
  * TODO description
  */
-public class Base extends  Base$$Basic  {
+abstract class Base$$C extends  Base$$Basic  {
+
+	public Complex add(Complex a, Complex b) {
+		return new Complex(a.real+b.real, a.imag+b.imag);
+	}
+	
+	public Complex mul(Complex a, Complex b) {
+		double new_real = (a.real*b.real)-(a.imag*b.imag);
+		double new_imag = (a.real*b.imag)+(a.imag*b.real);
+		return new Complex(new_real, new_imag);
+	}
+	
+}
+
+/**
+ * TODO description
+ */
+public class Base extends  Base$$C  {
 	
 	public double add(double i, double j) {
 		System.out.println("Adding " + Double.toString(i) + " and " + Double.toString(j));
