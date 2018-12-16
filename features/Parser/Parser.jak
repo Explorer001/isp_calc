@@ -26,7 +26,7 @@ public class Parser {
 		} else if (rd.equals("1")) {
 			eval_base();
 		} else if (rd.equals("2")) {
-			eval_mat();
+			new Parser().eval_mat();
 		} else if (rd.equals("3")) {
 			eval_round();
 		} else if (rd.equals("4")) {

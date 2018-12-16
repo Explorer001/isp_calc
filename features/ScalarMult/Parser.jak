@@ -1,0 +1,17 @@
+/**
+ * TODO description
+ */
+public refines class Parser {
+
+	public static Matrix eval_mat() {
+		Matrix m1 = Super().eval_mat();
+		System.out.println("Scalar mult");
+		System.out.print("Scalar = ");
+		double sc = Super().sc.nextDouble();
+		System.out.println();
+		Matrix s = new ScalarMult().mult(sc, m1);
+		s.print();
+		return s;
+	}
+	
+}
